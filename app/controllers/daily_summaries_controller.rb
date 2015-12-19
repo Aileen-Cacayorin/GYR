@@ -12,8 +12,13 @@ class DailySummariesController < ApplicationController
 
   def create
     @class_group = ClassGroup.find(params[:class_group_id])
-    daily_summary = @class_group.daily_summaries.new(daily_summary_params)
-    if daily_summary.save
+    @daily_summary = @class_group.daily_summaries.new(daily_summary_params)
+    if @daily_summary.save
+      @reports = @daily_summary.reports
+      @reports.each do |report|
+        student = Student.find(report.student_id)
+        TeacherMailer.daily_report(student, report, @class_group.teacher).deliver
+      end
       redirect_to root_path
     end
   end

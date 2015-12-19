@@ -1,5 +1,6 @@
 .container
-  %h1 Class report blast builder
+  %h1
+    Class report blast builder
   = form_for [@class_group, @daily_summary], html: {multipart: true} do |ds|
     .form_group
       = ds.label :date, "Report Date"
