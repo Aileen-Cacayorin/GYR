@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :parents
   devise_for :teachers
 
   resources :teachers do
@@ -12,6 +13,10 @@ Rails.application.routes.draw do
 
   resources :students do
     resources :reports
+  end
+
+  resources :parents do
+    resources :students
   end
 
   root to: "class_groups#index"
