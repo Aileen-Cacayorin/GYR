@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :parents
+  devise_for :parents, controllers: {
+        sessions: 'parents/sessions'
+      }
+
   devise_for :teachers
 
   resources :teachers do
