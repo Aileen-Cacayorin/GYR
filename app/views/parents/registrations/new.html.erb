@@ -62,6 +62,8 @@ Parent Sign up
         </div>
       </div>
 
+       <%=f.hidden_field :student_id, :value => Student.find(params[:student]).id %>
+
       <br>
 
       <div class="col-xs-3">

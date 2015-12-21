@@ -18,3 +18,6 @@
 
 <p>Best,</p>
 <p><%= @teacher.full_name %></p>
+
+
+<%= link_to "Sign up for GYR to view student reports", new_parent_registration_path(:student => @student.id)  %>

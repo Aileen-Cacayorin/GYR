@@ -1,5 +1,5 @@
-class Parents::RegistrationsController < Devise::RegistrationsController
-before_filter :configure_sign_up_params, only: [:create]
+class Teachers::RegistrationsController < Devise::RegistrationsController
+# before_filter :configure_sign_up_params, only: [:create]
 # before_filter :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
@@ -8,20 +8,9 @@ before_filter :configure_sign_up_params, only: [:create]
   # end
 
   # POST /resource
-  def create
-    super do |resource|
-      binding.pry
-        if resource.save
-        @student = Student.find(params[:parent][:student_id])
-        @student.parent = resource
-        @student.save
-        binding.pry
-        redirect_to parent_path(resource)
-      end
-    end
-
-
-  end
+  # def create
+  #   super
+  # end
 
   # GET /resource/edit
   # def edit
@@ -50,9 +39,9 @@ before_filter :configure_sign_up_params, only: [:create]
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
-  def configure_sign_up_params
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation, :first_name, :last_name) }
-  end
+  # def configure_sign_up_params
+  #   devise_parameter_sanitizer.for(:sign_up) << :attribute
+  # end
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_account_update_params
