@@ -10,13 +10,10 @@ before_filter :configure_sign_up_params, only: [:create]
   # POST /resource
   def create
     super do |resource|
-      binding.pry
         if resource.save
         @student = Student.find(params[:parent][:student_id])
         @student.parent = resource
         @student.save
-        binding.pry
-        redirect_to parent_path(resource)
       end
     end
 
@@ -60,9 +57,9 @@ before_filter :configure_sign_up_params, only: [:create]
   # end
 
   # The path used after sign up.
-  # def after_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+  def after_sign_in_path_for(parent)
+        "/parents/#{parent.id}"
+    end
 
   # The path used after sign up for inactive accounts.
   # def after_inactive_sign_up_path_for(resource)
