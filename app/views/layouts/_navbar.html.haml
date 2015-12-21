@@ -16,6 +16,13 @@
           %li
             =link_to destroy_teacher_session_path, method: :delete do
               Log Out
+
+      -elsif parent_signed_in?
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            =link_to destroy_parent_session_path, method: :delete do
+              Log Out
+
       - else
         %ul.nav.navbar-nav.navbar-right
           %li
@@ -24,14 +31,7 @@
           %li
             =link_to new_teacher_session_path do
               Sign in
-          %li
-            =link_to new_parent_registration_path do
-              Parent Sign Up(remove later)
-
+    
             %li
               =link_to new_parent_session_path do
                 Parent Sign in
-
-            %li
-              =link_to destroy_parent_session_path, method: :delete do
-                Log Out
