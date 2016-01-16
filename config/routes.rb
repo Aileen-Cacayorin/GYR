@@ -24,5 +24,5 @@ Rails.application.routes.draw do
     resources :students
   end
 
-  root to: "class_groups#index"
+  root to: "home#index"
 end
