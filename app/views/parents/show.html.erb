@@ -1,1 +1,14 @@
-This is the parent page
+<h1>This is the parent page</h1>
+
+<h1>Welcome <%= @parent.first_name %>
+
+
+<h3>Your kids:</h3>
+
+<% if @students.any? %>
+  <ul>
+    <% @students.each do |student| %>
+      <li><%= student.first_name %> <%= student.last_name %>   </li>
+    <% end %>
+  </ul>
+<% end %>
