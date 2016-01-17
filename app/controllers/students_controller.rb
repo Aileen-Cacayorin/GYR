@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
-  before_filter :authenticate_teacher!
+  before_filter :authenticate_teacher!, except: [:edit, :update] #need to find a better way to do this
+
 
   def show
     @student = Student.find(params[:id])
@@ -21,8 +22,18 @@ class StudentsController < ApplicationController
     redirect_to teacher_class_groups_path(@teacher, @class_group)
   end
 
+  def edit
+    binding.pry
+  end
+
+  def update
+    @student = Student.create(student_params)
+    binding.pry
+
+  end
+
   private
   def student_params
-    params.require(:student).permit(:first_name, :last_name, :parent_email)
+    params.require(:student).permit(:first_name, :last_name, :parent_email, :parent_id)
   end
 end
