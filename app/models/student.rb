@@ -1,5 +1,6 @@
 class Student < ActiveRecord::Base
   has_many :reports
+  belongs_to :parent
   has_and_belongs_to_many :class_groups
   validates_presence_of :first_name
   validates_presence_of :last_name

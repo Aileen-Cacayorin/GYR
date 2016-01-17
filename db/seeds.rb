@@ -10,6 +10,8 @@ teacher = Teacher.create(first_name: 'Sam', last_name: "Teacher", email: "aokinc
 
 class_group = teacher.class_groups.create(name: "general")
 
+# parent = Parent.create(first_name: 'Joe', last_name: "Parent", email: "acacayorin@gmail.com", password: "studentparent")
+
 students = [
   ["Aileen", "Cacayorin", "acacayorin@gmail.com"],
   ["Shannon", "Mulloy", "smulloy21@gmail.com"],
@@ -18,5 +20,5 @@ students = [
 ]
 
 students.each do |first, last, parent_email|
-  class_group.students.create(first_name: first, last_name: last, parent_email: parent_email)
+  class_group.students.create(first_name: first, last_name: last, parent_email: parent_email,)
 end

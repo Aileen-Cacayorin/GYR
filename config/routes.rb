@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :teachers
+  devise_for :parents, controllers: {
+        sessions: 'parents/sessions', registrations: 'parents/registrations'
+      }
+
+  devise_for :teachers, controllers: {
+        sessions: 'teachers/sessions',
+      }
 
   resources :teachers do
     resources :class_groups
@@ -14,5 +20,9 @@ Rails.application.routes.draw do
     resources :reports
   end
 
-  root to: "class_groups#index"
+  resources :parents do
+    resources :students
+  end
+
+  root to: "home#index"
 end

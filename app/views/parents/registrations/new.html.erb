@@ -1,3 +1,5 @@
+Parent Sign up
+
 <div class="container">
   <div class="signup-box">
     <div class="logo text-center">
@@ -59,6 +61,8 @@
           <%= f.submit "Sign up", class: "form-control" %>
         </div>
       </div>
+
+       <%=f.hidden_field :student_id, :value => Student.find(params[:student]).id %>
 
       <br>
 

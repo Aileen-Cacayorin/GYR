@@ -1,0 +1,24 @@
+<h1>This is the parent page</h1>
+
+<h1>Welcome <%= @parent.first_name %>
+
+
+<h3>Your kids:</h3>
+
+<% if @students.any? %>
+  <ul>
+    <% @students.each do |student| %>
+      <li><%= student.first_name %> <%= student.last_name %>   </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<% if @possible_students.any? %>
+<h2>Add your other kids?</h2>
+
+  <%= form_for @parent, :method => :patch do |f| %>
+    <%= collection_select(:student, :id, @possible_students, :id, :first_name, :parent_id => @parent.id) %>
+    <%= f.submit "Submit" %>
+  <% end %>
+<% end %>

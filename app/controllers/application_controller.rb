@@ -11,5 +11,5 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery
   include ActionView::Helpers::NumberHelper
-  before_filter :authenticate_teacher!
+  # before_filter :authenticate_teacher!
 end

@@ -1,11 +1,14 @@
 .container
-  %h1 Class: #{@class_group.name.capitalize}
 
+  %h1 Class: #{@class_group.name.capitalize}
+  =link_to new_class_group_student_path(@class_group), class: "btn btn-primary" do
+    Add Student
   .row
     .col-xs-8.col-sm-8.col-md-8.col-lg-8
       .panel.panel-default
         .panel-heading
           %h3.panel-title Students
+
         .list-group
           - @students.each do |student|
             .list-group-item

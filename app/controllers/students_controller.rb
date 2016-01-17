@@ -8,16 +8,20 @@ class StudentsController < ApplicationController
 
   def new
     @teacher = current_teacher
+    @class_group = ClassGroup.find(params[:class_group_id])
     @student = Student.new
   end
 
   def create
+    @class_group = ClassGroup.find(params[:class_group_id])
     @teacher = current_teacher
     @student = Student.create(student_params)
-    @student.teacher = @teacher
     @student.save
-    redirect_to teacher_students_path(@teacher)
+    @class_group.students << @student
+    redirect_to teacher_class_groups_path(@teacher, @class_group)
   end
+
+
 
   private
   def student_params
