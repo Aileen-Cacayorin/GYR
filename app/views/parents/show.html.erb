@@ -15,9 +15,7 @@
 
 
 <% if @possible_students.any? %>
-  <ul>
-    <% @possible_students.each do |student| %>
-      <li><%= student.first_name %> <%= student.last_name %>   </li>
-    <% end %>
-  </ul>
+<h2>Add your other kids?</h2>
+  <%= collection_select(:student, :parent_id, @possible_students, :id, :first_name) %>
+
 <% end %>
