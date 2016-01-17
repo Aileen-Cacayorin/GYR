@@ -17,7 +17,7 @@
 <% if @possible_students.any? %>
 <h2>Add your other kids?</h2>
 
-  <%= form_for [@parent, @student], :method => :patch do |f| %>
+  <%= form_for @parent, :method => :patch do |f| %>
     <%= collection_select(:student, :id, @possible_students, :id, :first_name, :parent_id => @parent.id) %>
     <%= f.submit "Submit" %>
   <% end %>

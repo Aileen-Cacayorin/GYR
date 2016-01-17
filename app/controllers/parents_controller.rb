@@ -12,8 +12,11 @@ class ParentsController < ApplicationController
     binding.pry
   end
 
-  def update
-    binding.pry
-
+  def update #need to make this more secure by setting permitted params?
+    @student = Student.find(params[:student][:id])
+    @parent = Parent.find(params[:id])
+    @student.parent = @parent
+    @student.save
+    redirect_to parent_path(@parent)
   end
 end
