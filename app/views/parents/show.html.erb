@@ -12,3 +12,12 @@
     <% end %>
   </ul>
 <% end %>
+
+
+<% if @possible_students.any? %>
+  <ul>
+    <% @possible_students.each do |student| %>
+      <li><%= student.first_name %> <%= student.last_name %>   </li>
+    <% end %>
+  </ul>
+<% end %>

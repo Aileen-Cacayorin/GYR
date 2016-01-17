@@ -4,6 +4,7 @@ class ParentsController < ApplicationController
   def show
     @parent = current_parent
     @students = @parent.students
+    @possible_students = @parent.possible_students
   end
 
 end
