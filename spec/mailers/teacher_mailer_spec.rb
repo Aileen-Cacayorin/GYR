@@ -4,9 +4,11 @@ RSpec.describe TeacherMailer, type: :mailer do
   describe "daily_report" do
     teacher = FactoryGirl.create(:teacher)
     class_group = teacher.class_groups.push(FactoryGirl.create(:class_group))
+    daily_summary = class_group.first.daily_summaries.push(FactoryGirl.create(:daily_summary))
     student = class_group.first.students.push(FactoryGirl.create(:student))
+    report = daily_summary.first.reports.push(FactoryGirl.create(:report))
 
-    let(:mail) { TeacherMailer.daily_report(teacher, class_group.first, student.first) }
+    let(:mail) { TeacherMailer.daily_report(teacher, report.first, student.first) }
 
     it "renders the headers" do
       expect(mail.subject).to eq("Daily report")
