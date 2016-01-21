@@ -9,7 +9,5 @@ class Parent < ActiveRecord::Base
  def possible_students
     email = self.email
     return Student.where(parent_email: email, parent_id: nil)
-
  end
-
 end
