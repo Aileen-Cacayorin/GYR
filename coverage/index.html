@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-20T20:37:30-08:00">2016-01-20T20:37:30-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-20T21:04:47-08:00">2016-01-20T21:04:47-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">99.02%</span></span>
+    (<span class="covered_percent"><span class="green">99.03%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.42
+         1.46
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>205</b> relevant lines. 
-    <span class="green"><b>203</b> lines covered</span> and
+    <b>207</b> relevant lines. 
+    <span class="green"><b>205</b> lines covered</span> and
     <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -127,7 +127,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -137,7 +137,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -333,11 +333,11 @@
       <tr>
         <td class="strong"><a href="#9c30e9089051ec3eb044ffae537fcc97971287b0" class="src_link" title="spec/mailers/teacher_mailer_spec.rb">spec/mailers/teacher_mailer_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>25</td>
-        <td>15</td>
-        <td>15</td>
+        <td>27</td>
+        <td>17</td>
+        <td>17</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -602,8 +602,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">    mail to: @student.parent_email, subject: &quot;Today&#39;s Report&quot;</code>
         </li>
@@ -950,8 +950,8 @@
           <code class="ruby">  def full_name</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="10">
+          <span class="hits">5</span>
           
           <code class="ruby">    return self.first_name + &quot; &quot; + self.last_name</code>
         </li>
@@ -1034,8 +1034,8 @@
           <code class="ruby">  def full_name</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
           
           <code class="ruby">    return self.first_name + &quot; &quot; + self.last_name</code>
         </li>
@@ -4073,7 +4073,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    color(&#39;Green&#39;)</code>
+          <code class="ruby">    color(&#39;green&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -4235,8 +4235,8 @@
     <h3>spec/mailers/teacher_mailer_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4271,55 +4271,55 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    teacher = FactoryGirl.create(:teacher)</code>
+          <code class="ruby">    before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          <code class="ruby">    class_group = teacher.class_groups.push(FactoryGirl.create(:class_group))</code>
+          <code class="ruby">      @teacher = FactoryGirl.create(:teacher)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    # The reason I use first in some of the lines below is because pushing only</code>
+          <code class="ruby">      class_group = @teacher.class_groups.push(FactoryGirl.create(:class_group))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    # saves the relationship, not the item being pushed in. First grabs the item</code>
+          <code class="ruby">      # The reason I use first in some of the lines below is because pushing only</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    daily_summary = class_group.first.daily_summaries.push(FactoryGirl.create(:daily_summary))</code>
+          
+          <code class="ruby">      # saves the relationship, not the item being pushed in. First grabs the item</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
-          <code class="ruby">    student = class_group.first.students.push(FactoryGirl.create(:student))</code>
+          <code class="ruby">      daily_summary = class_group.first.daily_summaries.push(FactoryGirl.create(:daily_summary))</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
-          <code class="ruby">    report = daily_summary.first.reports.push(FactoryGirl.create(:report))</code>
+          <code class="ruby">      @student = class_group.first.students.push(FactoryGirl.create(:student))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      @report = daily_summary.first.reports.push(FactoryGirl.create(:report))</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="13">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">    let(:mail) { TeacherMailer.daily_report(student.first, report.first, teacher) }</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -4331,64 +4331,76 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;renders the headers&quot; do</code>
+          <code class="ruby">    let(:mail) { TeacherMailer.daily_report(@student.first, @report.first, @teacher) }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(mail.subject).to eq(&quot;Today&#39;s Report&quot;)</code>
+          <code class="ruby">    it &quot;renders the headers&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(mail.to).to eq([student.first.parent_email])</code>
+          <code class="ruby">      expect(mail.subject).to eq(&quot;Today&#39;s Report&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(mail.from).to eq([&quot;from@example.com&quot;])</code>
+          <code class="ruby">      expect(mail.to).to eq([@student.first.parent_email])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect(mail.from).to eq([&quot;from@example.com&quot;])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="3" data-linenumber="22">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    let(:mail) { TeacherMailer.daily_report(@student.first, @report.first, @teacher) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">    it &quot;renders the body&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(mail.body.encoded).to match(&quot;Hi&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>

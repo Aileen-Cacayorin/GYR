@@ -23,5 +23,5 @@
 <% if @student.parent %>
   <%= link_to "Login to GYR for more reports", new_parent_session_path  %>
 <% else %>
-  <%= link_to "Sign up for GYR to view student reports", new_parent_registration_path(:student => @student.id)  %>
+  <%= link_to "Sign up for GYR to view student reports", new_parent_registration_path  %>
 <% end %>
