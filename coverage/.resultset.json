@@ -73,12 +73,12 @@
         null,
         null,
         1,
-        21,
+        25,
         null,
         null,
         1,
-        21,
-        21,
+        25,
+        25,
         null,
         null,
         null,
@@ -561,6 +561,38 @@
         null,
         null
       ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/parents.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/app/models/parent.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/austinkincaid/Desktop/GYR/spec/factories/reports.rb": [
         1,
         1,
@@ -577,9 +609,29 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
-      "/Users/austinkincaid/Desktop/GYR/spec/factories/users.rb": [
+      "/Users/austinkincaid/Desktop/GYR/app/models/student.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/teachers.rb": [
         1,
         1,
         1,
@@ -617,21 +669,6 @@
         null,
         null,
         1,
-        null
-      ],
-      "/Users/austinkincaid/Desktop/GYR/app/models/parent.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
         null
       ],
       "/Users/austinkincaid/Desktop/GYR/app/models/teacher.rb": [
@@ -718,7 +755,19 @@
         1,
         null,
         1,
+        2,
+        null,
+        null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/austinkincaid/Desktop/GYR/spec/models/report_spec.rb": [
@@ -748,23 +797,10 @@
         2,
         2,
         2,
+        2,
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/austinkincaid/Desktop/GYR/app/models/student.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        5,
         null,
         null
       ],
@@ -776,6 +812,6 @@
         null
       ]
     },
-    "timestamp": 1453352687
+    "timestamp": 1453353994
   }
 }
