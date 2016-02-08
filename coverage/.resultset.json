@@ -1,27 +1,36 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/mailers/teacher_mailer_spec.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/mailers/teacher_mailer_spec.rb": [
         1,
         null,
         1,
         1,
+        1,
+        2,
+        2,
+        null,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         3,
-        null,
         1,
         1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        null,
         null,
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/rails_helper.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -30,7 +39,8 @@
         1,
         1,
         null,
-        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -58,6 +68,19 @@
         null,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        25,
+        null,
+        null,
+        1,
+        25,
+        25,
+        null,
+        null,
         null,
         null,
         null,
@@ -87,14 +110,14 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/environment.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/application.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/application.rb": [
         1,
         null,
         1,
@@ -131,12 +154,12 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/boot.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/environments/test.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/environments/test.rb": [
         1,
         null,
         null,
@@ -180,7 +203,7 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/assets.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -193,7 +216,7 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/backtrace_silencers.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -202,12 +225,12 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/cookies_serializer.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/devise.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -418,7 +441,7 @@
         null,
         null,
         null,
-        null,
+        1,
         null,
         null,
         null,
@@ -471,13 +494,13 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/filter_parameter_logging.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/inflections.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -495,18 +518,18 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/mime_types.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/session_store.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/initializers/wrap_parameters.rb": [
+      "/Users/austinkincaid/Desktop/GYR/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -522,10 +545,117 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/config/routes.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/class_groups.rb": [
+        1,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/daily_summaries.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/parents.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/app/models/parent.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/reports.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/students.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/app/models/student.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/factories/teachers.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/config/routes.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         1,
         1,
         null,
@@ -541,83 +671,67 @@
         1,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/models/teacher.rb": [
+      "/Users/austinkincaid/Desktop/GYR/app/models/teacher.rb": [
         1,
         null,
         null,
         1,
         null,
         1,
+        null,
+        1,
+        4,
+        null,
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/helpers/application_helper.rb": [
+      "/Users/austinkincaid/Desktop/GYR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/mailers/teacher_mailer.rb": [
+      "/Users/austinkincaid/Desktop/GYR/app/mailers/teacher_mailer.rb": [
         1,
         null,
         null,
         null,
         null,
         null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null
-      ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/models/class_group_spec.rb": [
-        1,
         null,
         1,
         2,
         2,
         2,
+        2,
+        2,
+        null,
+        null,
+        2,
+        null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/models/class_group.rb": [
-        1,
+      "/Users/austinkincaid/Desktop/GYR/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/models/daily_summary_spec.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/models/class_group_spec.rb": [
         1,
         null,
         1,
         2,
         2,
         2,
-        2,
-        2,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/models/daily_summary.rb": [
-        1,
-        1,
+      "/Users/austinkincaid/Desktop/GYR/app/models/class_group.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/models/report_spec.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/models/daily_summary_spec.rb": [
         1,
         null,
         1,
@@ -625,9 +739,11 @@
         2,
         2,
         2,
+        2,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/models/report.rb": [
+      "/Users/austinkincaid/Desktop/GYR/app/models/daily_summary.rb": [
+        1,
         1,
         1,
         1,
@@ -635,10 +751,48 @@
         1,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/models/student_spec.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/models/parent_spec.rb": [
         1,
         null,
         1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/models/report_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/app/models/report.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/austinkincaid/Desktop/GYR/spec/models/student_spec.rb": [
+        1,
+        null,
+        1,
+        2,
         2,
         2,
         2,
@@ -650,20 +804,7 @@
         null,
         null
       ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/app/models/student.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/austinkincaid/Desktop/HackPDX_projectGYR/spec/models/teacher_spec.rb": [
+      "/Users/austinkincaid/Desktop/GYR/spec/models/teacher_spec.rb": [
         1,
         null,
         1,
@@ -671,6 +812,6 @@
         null
       ]
     },
-    "timestamp": 1449778372
+    "timestamp": 1453353994
   }
 }
