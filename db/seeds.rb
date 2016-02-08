@@ -20,5 +20,5 @@ students = [
 ]
 
 students.each do |first, last, parent_email|
-  class_group.students.create(first_name: first, last_name: last, parent_email: parent_email,)
+  class_group.students.create(first_name: first, last_name: last, parent_email: parent_email)
 end
