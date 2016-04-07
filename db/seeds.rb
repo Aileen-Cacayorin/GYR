@@ -12,6 +12,8 @@ class_group = teacher.class_groups.create(name: "general")
 
 # parent = Parent.create(first_name: 'Joe', last_name: "Parent", email: "acacayorin@gmail.com", password: "studentparent")
 
+
+
 students = [
   ["Aileen", "Cacayorin", "acacayorin@gmail.com"],
   ["Shannon", "Mulloy", "smulloy21@gmail.com"],
