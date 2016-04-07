@@ -17,14 +17,18 @@
       .col-lg-3.col-md-3.col-sm-3.col-xs-3
         %h4= r.object.student.full_name
       .form_group.col-lg-3.col-md-3.col-sm-3.col-xs-3
-        = r.label :color, "Color"
+        = r.label :color, "Green"
         = r.radio_button :color, "green", checked: true
+        = r.label :color, "Yellow"
         = r.radio_button :color, "yellow"
+        = r.label :color, "Red"
         = r.radio_button :color, "red"
       .form_group.col-lg-3.col-md-3.col-sm-3.col-xs-3
-        = r.label :status, "Status"
+        = r.label :color, "Present"
         = r.radio_button :status, "present", checked: true
+        = r.label :color, "Tardy"
         = r.radio_button :status, "tardy"
+        = r.label :color, "Absent"
         = r.radio_button :status, "absent"
       .form_group.col-lg-3.col-md-3.col-sm-3.col-xs-3
         = r.text_area :comment, class: 'form-control'
